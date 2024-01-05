@@ -52,6 +52,7 @@ function resetGame() {
 
   playerChoiceElement.innerText = "";
   computerChoiceElement.innerText = "";
+  scoreElemnet.innerText = `Player: ${playerScore} | Computer: ${computerScore}`;
   enableButtons();
 }
 
