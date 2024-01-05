@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Rock, Paper, Scissors</h1>
+      <div class="choise-container">
+        <div class="choise">
+          <h1>Player:</h1>
+          <h1 id="playerChoise"></h1>
+        </div>
+        <div class="choise">
+          <h1>Computer:</h1>
+          <h1 id="computerChoise"></h1>
+        </div>
+      </div>
+      <p id="result">Choose your move:</p>
+      <div>
+        <button
+          class="btn move"
+          ontouchstart="playGame('rock')"
+          onclick="playGame('rock')"
+        >
+          🪨 Rock
+        </button>
+        <button
+          class="btn move"
+          ontouchstart="playGame('paper')"
+          onclick="playGame('paper')"
+        >
+          🧻 Paper
+        </button>
+        <button
+          class="btn move"
+          ontouchstart="playGame('scissors')"
+          onclick="playGame('scissors')"
+        >
+          ✂️ Scissors
+        </button>
+      </div>
+      <button
+        id="reset-btn"
+        class="btn"
+        ontouchstart="resetGame()"
+        onclick="resetGame()"
+      >
+        Reset Game
+      </button>
+      <div id="score">Player: 0 | Computer: 0</div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
