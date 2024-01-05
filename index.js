@@ -56,6 +56,17 @@ function resetGame() {
   enableButtons();
 }
 
+moveButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const move = event.target.dataset.move;
+    if (event.type === "touchstart") {
+      playGame(move);
+    } else {
+      playGame(move);
+    }
+  });
+});
+
 function disableButtons() {
   moveButtons.forEach((button) => {
     button.disabled = true;

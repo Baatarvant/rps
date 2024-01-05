@@ -27,27 +27,9 @@
       </div>
       <p id="result">Choose your move:</p>
       <div>
-        <button
-          class="btn move"
-          ontouchstart="playGame('rock')"
-          onclick="playGame('rock')"
-        >
-          🪨 Rock
-        </button>
-        <button
-          class="btn move"
-          ontouchstart="playGame('paper')"
-          onclick="playGame('paper')"
-        >
-          🧻 Paper
-        </button>
-        <button
-          class="btn move"
-          ontouchstart="playGame('scissors')"
-          onclick="playGame('scissors')"
-        >
-          ✂️ Scissors
-        </button>
+        <button class="btn move" data-move="rock">🪨 Rock</button>
+        <button class="btn move" data-move="paper">🧻 Paper</button>
+        <button class="btn move" data-move="rock">✂️ Scissors</button>
       </div>
       <button
         id="reset-btn"
